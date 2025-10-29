@@ -1,4 +1,4 @@
-import "../App.css"
+import "../Header.css"
 import Logo from "../assets/Logo.png"
 
 function Header() {
