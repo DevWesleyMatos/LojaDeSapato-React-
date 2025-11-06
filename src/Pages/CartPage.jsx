@@ -8,7 +8,6 @@ function CartPage() {
     <>
         <Header/>
         <Banner/>
-        <Footer/>
     </>
   )
 }
