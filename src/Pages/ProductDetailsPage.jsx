@@ -1,9 +1,11 @@
-
+import Header from "../Components/Header/Header"
+import RelatedProducts from "../Components/RelatedProducts/RelatedProducts"
 
 function ProductsDetailspage() {
   return (
     <>
-        <h1>products detail page</h1>
+        <Header></Header>
+        <RelatedProducts></RelatedProducts>
     </>
   )
 }
