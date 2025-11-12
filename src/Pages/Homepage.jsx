@@ -6,7 +6,7 @@ function Homepage() {
   return (
     <>
         <Header/>
-        <Banner/>
+
         <Footer/>
     </>
   )
