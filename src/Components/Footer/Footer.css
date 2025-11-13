@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+#footer-container {
+    background-color: #1F1F1F;
+    color: white;
+    font-size: 13px;
+    font-family: inter;
+    font-weight: 400;
+}
+
+#footer-column {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+#footer-links {
+    display: flex;
+    flex-direction: column;
+    padding: 4vw;
+    width: 25vw;
+    gap: 4vh;
+}
+#footer-socialmedia{
+    display: flex;
+    gap: 1vw;
+}
+
+#footer-info {
+    display: flex;
+    flex-direction: column;
+    padding: 4vw;
+    width: 16vw;
+    gap: 2vh;
+}
+
+#footer-category {
+    display: flex;
+    flex-direction: column;
+    padding: 4vw;
+    width: 16vw;
+    gap: 2vh;
+}
+
+#footer-contact {
+    display: flex;
+    flex-direction: column;
+    padding: 4vw;
+    width: 18vw;
+    gap: 2vh;
+}
+
+#footer-rodape {
+    text-align: center;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    color: darkgray;
+}
+
+#linha {
+    border: darkgray 1px solid;
+    margin: 0 5vw;
+}

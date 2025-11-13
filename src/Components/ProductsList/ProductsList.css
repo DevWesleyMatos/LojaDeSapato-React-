@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+#productsListSection{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+}
+#tittleProducts{
+    width: 100%;
+    padding-left: 7vw;
+    display: flex;
+    align-items: center;  
+    justify-content: center;
+    font-family: inter;
+    font-weight: bold;
+    font-size: 24px;
+    color: #474747;
+    height: 15vh;
+}
+#productsList{
+    
+    background-color: #f9f8fe;
+    margin: 1vh 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    height: 25vh;
+}
+.itemList{
+    background-color:#ffffff ;
+    width: 130px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    gap: 0.5vw
+}
+.itemList img{
+    width: 48px;
+    object-fit: contain;
+}

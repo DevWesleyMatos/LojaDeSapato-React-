@@ -1,0 +1,55 @@
+
+#carousel {
+    display: flex;
+    background-color: #f5f5f5;
+    padding: 10vh 5vw;
+}
+
+#carousel_Txt {
+    display: flex;
+    flex-direction: column;
+    width: 33vw;
+}
+#carouselImg {
+    display: flex;
+}
+#carouselImg img {
+    width: 560px;
+}
+
+#img2 img{
+    width: 130px;
+}
+
+#textPersonal {
+    color: #F6AA1C;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#textEstoque {
+    font-weight: 800;
+    font-style: normal;
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: 1px;
+}
+#oferta {
+    width: 14vw;
+    height: 6vh;
+    background-color: #c92071;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.carousel-indicators [data-bs-target] {
+    background-color: #cccccc;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.carousel-indicators [data-bs-target]:hover {
+    background-color: #c92071;
+}
