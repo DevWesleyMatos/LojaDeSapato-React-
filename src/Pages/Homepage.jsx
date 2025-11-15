@@ -6,6 +6,7 @@ import SpecialOffer from "../Components/SpecialOffer/SpecialOffer";
 import ProductsList from "../Components/ProductsList/ProductsList"
 import NavBar from "../Components/NavBar/NavBar";
 import ProductHeight from "../Components/ProductHeight/ProductHeight";
+import Cards from "../Components/Cards/Cards";
 
 function Homepage() {
   
@@ -17,6 +18,7 @@ function Homepage() {
           <ProductsList/>
           <Cart/>
           <ProductHeight/>
+          <Cards/>
           <SpecialOffer/>
           <Footer/>        
     </>
