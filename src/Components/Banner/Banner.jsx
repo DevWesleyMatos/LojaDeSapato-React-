@@ -25,7 +25,7 @@ function Banner() {
             </div>
 
             <div className="product-counter">
-              <div>
+              <div id="div-quantity">
                 <button id="btn-less">−</button>
                 <span id="value">1</span>
                 <button id="btn-more">+</button>

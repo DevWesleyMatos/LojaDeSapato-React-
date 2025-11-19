@@ -7,8 +7,30 @@
   max-width: 1150px;
   margin: 40px auto;
   font-family: Arial, sans-serif;
+  padding: 20px;
 }
+.discount-section button{
+  margin-top: 15px;
+  background-color: #e3e2e2 !important;
+}
+.discount-section input{
+  background-color: #e3e2e2 !important;
 
+}
+.shipping-section button{
+  margin-top: 15px;
+  background-color: #e3e2e2 !important;
+}
+.shipping-section input{
+  background-color: #e3e2e2 !important;
+
+}
+#div-quantity{
+  display: flex ;
+  align-items: center;
+  
+  background-color: red;
+}
 .cart-section > div:first-child {
   flex: 2;
 }
