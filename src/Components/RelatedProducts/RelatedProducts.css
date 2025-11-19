@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+section{
+    
+  font-family: "Inter", sans-serif;
+  background-color: #f2f2f2;
+ 
+}
+
+#H1{
+  height: 10px;
+  display: flex;
+  margin-left: 8vw;
+  color:#474747;
+  font-weight: 700;
+
+}
+#descricao{
+ 
+    display: flex;
+    justify-content: space-between;
+}
+#arrow{
+    margin-right: 8vw;
+    color: #C92071;
+  
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    line-height: 1vh;
+    width: 13vw;
+    
+}
+
+.sneker{
+    color: #8F8F8F;
+    font-size:11px;
+    font-weight: 600;
+}
+.V8{
+    display: flex;
+    font-weight: 350;
+    font-size: 16px;
+}
+.price{
+   text-decoration: line-through ;
+   color: #8F8F8F;
+   font-weight: 400;
+}
+.image{
+    background-color: white;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.059);
+    border-radius: 1%;
+    margin-bottom: 8%;
+    height: 25vh;
+  
+
+}
+.image img{
+    width: 12vw;
+}
+
+.card{
+    border: none;
+    background-color: transparent;
+}
+.prices{
+    display: flex;
+    gap: 0.5vw;
+    font-weight: 800;
+}
+
+#cartoes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 80px;
+}

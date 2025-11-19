@@ -1,9 +1,12 @@
+import Banner from "../Components/Banner/Banner"
+import Header from "../Components/Header/Header"
 
 
 function CartPage() {
   return (
     <>
-        <h1>CartPage</h1>
+        <Header/>
+        <Banner/>
     </>
   )
 }
