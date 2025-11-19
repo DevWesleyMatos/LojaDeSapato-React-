@@ -28,8 +28,6 @@
 #div-quantity{
   display: flex ;
   align-items: center;
-  
-  background-color: red;
 }
 .cart-section > div:first-child {
   flex: 2;

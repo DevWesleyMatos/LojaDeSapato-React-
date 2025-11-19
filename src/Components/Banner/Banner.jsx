@@ -1,7 +1,20 @@
 import "./Banner.css"
 import shoeImage from "../../assets/shoeImage.png"
+import { useState } from "react";
 
 function Banner() {
+  const [value, setValue] = useState(1)
+
+  function increment() {
+    setValue(value + 1)  
+  }
+  
+  function decrement() {
+    if(value > 0) {
+      setValue(value - 1)
+    }
+  }
+
   return (
     <>
       <section className="cart-section">
@@ -26,11 +39,11 @@ function Banner() {
 
             <div className="product-counter">
               <div id="div-quantity">
-                <button id="btn-less">−</button>
-                <span id="value">1</span>
-                <button id="btn-more">+</button>
+                <button id="btn-less" onClick={decrement}>−</button>
+                <span id="value" >{value}</span>
+                <button id="btn-more" onClick={increment}>+</button>
               </div>
-              <a href="#" id="remove-item">Remover Ítem</a>
+              <a href="#" id="remove-item">Remover Item</a>
             </div>
 
             <div className="price">
