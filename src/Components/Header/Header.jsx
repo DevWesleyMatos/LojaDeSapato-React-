@@ -6,7 +6,6 @@ function Header() {
     <>
       <section id="header-container">
         <div id="logo-image">
-          <img src={vector} alt="" />
           <img src={Logo} alt="" />
         </div>
 
