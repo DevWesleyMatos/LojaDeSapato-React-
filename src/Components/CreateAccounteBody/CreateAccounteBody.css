@@ -1,0 +1,29 @@
+
+#create-account-Body{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#create-account-h1{
+    width: 50vw;
+    margin-top: 5vh;
+}
+#create-account-h1 h1{
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+#create-account-informations{
+    width: 50vw;
+    margin-top: 5vh;
+    margin-left: 2vw;
+    background-color: white;
+}
+#create-account-informations h4{
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(75, 74, 74);
+    margin-top: 5vh;
+    margin-left: 2vw;
+}
