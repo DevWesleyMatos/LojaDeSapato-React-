@@ -1,7 +1,7 @@
 import './Card.css'
 import ShoeCard from '../../assets/ShoeCard.png'
 
-function Card() {
+function Card(props) {
     return (
         <>
             <section>   
@@ -9,9 +9,9 @@ function Card() {
                     <img src={ShoeCard} alt="" />
                 </div>
                 <div id='card-text'>
-                    <span id="tenis-span">Tênis</span>
-                    <p id='tenis-p'>K-SWISS V8 - Masculino</p>
-                    <p className='text-value'><span id='span-line'>$200</span> $100</p>
+                    <span id="tenis-span">{props.category}</span>
+                    <p id='tenis-p'>{props.name}</p>
+                    <p className='text-value'><span id='span-line'>R${props.value}</span> R${props.discountedValue}</p>
                 </div>
             </section>
         </>
