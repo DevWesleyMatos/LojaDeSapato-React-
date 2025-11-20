@@ -1,3 +1,4 @@
+import Card from "../Card/Card";
 import "./ProductHeight.css";
 
 function ProductHeight() {
@@ -10,6 +11,12 @@ function ProductHeight() {
                 <div id="seeMoreHeight">
                     <p>Ver todos <i className="fa-solid fa-arrow-right" style={{ color: '#c92071' }}></i></p>
                 </div>
+            </div>
+            <div id="div-cards">
+                <Card />
+                <Card />
+                <Card />
+                <Card />
             </div>
 
         </section>

@@ -27,3 +27,7 @@
     font-size: 18px;
     color: #c92071;
 }
+#div-cards{
+    display: flex;
+    justify-content: space-around;
+}
