@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./Cards.css";
-import Tenis from "../../Assets/ImgCard/tenisOferta.png";
+import Tenis from "../../assets/ImgCard/tenisOferta.png";
 
 function Cards() {
     const [sapatos, setSapatos] = useState([]);
