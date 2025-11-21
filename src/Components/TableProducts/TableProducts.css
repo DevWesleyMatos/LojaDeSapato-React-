@@ -1,0 +1,78 @@
+.table-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    font-family: Inter, sans-serif;
+}
+
+.table-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead tr {
+    background: #f3f4f6;
+}
+
+th, td {
+    text-align: left;
+    padding: 10px;
+    font-size: 0.9rem;
+}
+
+tbody tr:nth-child(even) {
+    background: #fafafa;
+}
+
+tbody tr:hover {
+    background: #f1efff;
+}
+
+input {
+    width: 100%;
+    padding: 6px 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.actions button {
+    padding: 6px 10px;
+    margin-right: 6px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    border: none;
+}
+
+.edit {
+    background: #2563eb;
+    color: white;
+}
+
+.delete {
+    background: #dc2626;
+    color: white;
+}
+
+.save {
+    background: #10b981;
+    color: white;
+}
+
+.cancel {
+    background: #6b7280;
+    color: white;
+}
+
+button:hover {
+    filter: brightness(0.9);
+}
