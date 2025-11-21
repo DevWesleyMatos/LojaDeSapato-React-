@@ -1,6 +1,6 @@
 import "./Carousel.css"
 import tenisCarousel from "../../assets/tenis.png";
-import ornament from "../../assets/ornament.png"
+import ornament from "../../assets/Ornament.png"
 
 function Carousel() {
   return (
