@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-export default defineConfig({
+export default defineConfig(({ mode }) => ({
   plugins: [react()],
-  base: "/LojaDeSapato-React-/"
-})
+  base: process.env.VITE_BASE_URL || '/',
+}))
