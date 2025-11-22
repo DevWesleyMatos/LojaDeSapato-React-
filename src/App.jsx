@@ -4,7 +4,7 @@ import AdministrationProduct from "./Pages/AdministrationProduct";
 
 function App() {
   return (
-    <BrowserRouter basename={import.meta.env.VITE_BASE_URL}>
+    <BrowserRouter basename="/LojaDeSapato-React-/">
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/AdministrationProduct" element={<AdministrationProduct />} />
