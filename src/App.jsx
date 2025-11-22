@@ -4,7 +4,7 @@ import AdministrationProduct from "./Pages/AdministrationProduct";
 
 function App() {
   return (
-    <BrowserRouter basename="/LojaDeSapato-React-/">
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/AdministrationProduct" element={<AdministrationProduct />} />
