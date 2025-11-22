@@ -6,7 +6,7 @@ function Cards() {
     const [sapatos, setSapatos] = useState([]);
 
     useEffect(() => {
-        fetch("https://loja-de-sapato-back-java.onrender.com")
+        fetch("https://loja-de-sapato-back-java.onrender.com/sapatos")
             .then((res) => res.json())
             .then((data) => setSapatos(data))
             .catch((err) => console.log("Erro ao buscar sapatos:", err));

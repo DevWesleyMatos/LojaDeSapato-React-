@@ -14,7 +14,7 @@ export default function TableProducts() {
     });
 
     async function carregarProdutos() {
-        const response = await fetch("https://loja-de-sapato-back-java.onrender.com");
+        const response = await fetch("https://loja-de-sapato-back-java.onrender.com/sapatos");
         const data = await response.json();
         setProdutos(data);
     }
@@ -35,7 +35,7 @@ export default function TableProducts() {
     }
 
     async function salvarEdicao(id) {
-        await fetch(`https://loja-de-sapato-back-java.onrender.com/${id}`, {
+        await fetch(`https://loja-de-sapato-back-java.onrender.com/sapatos/${id}`, {
             method: "PUT",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify(editData)
@@ -49,7 +49,7 @@ export default function TableProducts() {
         const confirmacao = confirm("Deseja realmente excluir este produto?");
         if (!confirmacao) return;
 
-        await fetch(`https://loja-de-sapato-back-java.onrender.com/${id}`, {
+        await fetch(`https://loja-de-sapato-back-java.onrender.com/sapatos/${id}`, {
             method: "DELETE"
         });
 

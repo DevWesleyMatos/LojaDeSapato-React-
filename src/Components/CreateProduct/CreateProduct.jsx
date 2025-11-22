@@ -27,7 +27,7 @@ export default function CreateProduct() {
         };
 
         try {
-            const response = await fetch("https://loja-de-sapato-back-java.onrender.com", {
+            const response = await fetch("https://loja-de-sapato-back-java.onrender.com/sapatos", {
                 method: "POST",
                 headers: {"Content-Type": "application/json"},
                 body: JSON.stringify(payload)
