@@ -11,14 +11,14 @@ function Homepage() {
   
   return (
     <>
-          <Header />
-          <NavBar />
-          <Carousel />
-          <ProductsList/>
-          <Cart/>
-          <ProductHeight/>
-          <SpecialOffer/>
-          <Footer/>        
+      <Header />
+      <NavBar />
+      <Carousel />
+      <ProductsList/>
+      <Cart/>
+      <ProductHeight/>
+      <SpecialOffer/>
+      <Footer/>        
     </>
   )
 }

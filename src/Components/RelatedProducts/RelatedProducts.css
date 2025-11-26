@@ -1,29 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-section{
-    
+.related-products{
   font-family: "Inter", sans-serif;
-  background-color: #f2f2f2;
- 
+  width: 70%;
+  margin: 70px;
+  padding: 2rem 0;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
 }
 
-#H1{
+.h1{
   height: 10px;
   display: flex;
   margin-left: 8vw;
   color:#474747;
   font-weight: 700;
-
+  font-size: 20px;
 }
-#descricao{
- 
+
+.descricao{
     display: flex;
     justify-content: space-between;
+    margin-bottom:  1rem;
 }
-#arrow{
+
+.arrow{
     margin-right: 8vw;
     color: #C92071;
-  
 }
 
 .cards{
@@ -31,7 +37,6 @@ section{
     justify-content: space-around;
     line-height: 1vh;
     width: 13vw;
-    
 }
 
 .sneker{
@@ -39,42 +44,52 @@ section{
     font-size:11px;
     font-weight: 600;
 }
+
 .V8{
     display: flex;
     font-weight: 350;
-    font-size: 16px;
+    font-size: 14px;
 }
+
 .price{
    text-decoration: line-through ;
    color: #8F8F8F;
    font-weight: 400;
 }
+
 .image{
     background-color: white;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.059);
     border-radius: 1%;
     margin-bottom: 8%;
-    height: 25vh;
-  
-
+    display: flex;
+    width: 80%;
 }
+
 .image img{
-    width: 12vw;
+    width: 80%;
+    display: flex;
 }
 
 .card{
     border: none;
     background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
+
 .prices{
     display: flex;
     gap: 0.5vw;
     font-weight: 800;
 }
 
-#cartoes{
+.cartoes{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 10px 80px;
+    padding: 10px 130px;
+    width: 30%;
+    gap: 10px;
 }
