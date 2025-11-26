@@ -10,11 +10,13 @@
     margin-top: 5vh;
 }
 #create-account-h1 h1 {
-    font-size: 24px;
+    font-size: 32px;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+    font-weight: bolder;
 }
 #create-account-body-informations{
+    height: 80vh;
+    border-radius: 8px;
     margin-top: 5vh;
     margin-left: 2vw;
     background-color: white;
@@ -26,4 +28,64 @@
     color: rgb(75, 74, 74);
     margin-top: 5vh;
     margin-left: 2vw;
+}
+#create-account-body-delivery{
+    height: 80vh;
+    border-radius: 8px;
+    margin-top: 5vh;
+    margin-bottom: 4vh;
+    margin-left: 2vw;
+    background-color: white;
+    width: 50vw;
+}
+#create-account-body-delivery h4{
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(75, 74, 74);
+    margin-top: 5vh;
+    margin-left: 2vw;
+}
+#create-account-body-terms{
+    display: flex;
+    gap: 10px;
+    width: 50vw;
+    margin-left: 2vw;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 3vh;
+}
+#create-account-body-terms p {
+    text-align: justify;
+    font-family: inter;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.4;
+}
+input[type="checkbox"] {
+    accent-color: #c92071;
+    width: 28px;
+    height: 28px;
+}
+#create-account-body-button-div{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2vw;
+    margin-bottom: 15vh;
+}
+.create-account-body-button{
+    height: 9vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4vh;
+    border: none;
+    border-radius: 8px;
+    background-color: #c92071;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
 }
