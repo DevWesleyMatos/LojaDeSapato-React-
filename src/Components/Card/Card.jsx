@@ -4,10 +4,16 @@ import ShoeCard from '../../assets/ShoeCard.png'
 function Card(props) {
     return (
         <>
-            <section>   
+            <section id='card-section'>   
+                <div id='card-box'>
+                <div id='card-offer'>
+                    <p>30%OFF</p>
+                </div>
                 <div id='card-image'>
                     <img src={ShoeCard} alt="" />
                 </div>
+                </div>
+
                 <div id='card-text'>
                     <span id="tenis-span">{props.category}</span>
                     <p id='tenis-p'>{props.name}</p>

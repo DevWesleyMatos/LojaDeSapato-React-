@@ -7,7 +7,7 @@ function ProductHeight() {
 
     useEffect(() => {
         async function fetchData() {
-            const response = await fetch('https://691e5f87bb52a1db22bdb554.mockapi.io/api/products');
+            const response = await fetch('https://691e5f8abb52a1db22bdb573.mockapi.io/api/products');
             const data = await response.json()
             setProdutos(data)
         }

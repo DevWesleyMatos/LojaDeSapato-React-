@@ -1,26 +1,59 @@
-#card-image{
+#card-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2vh 2vw;
+}   
+#card-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: white;
+    border-radius: 10px;
+}
+#card-offer{
+    background-color: #e7ff86;
+    font-weight: bold;
+    margin-right: 11vw;
+    width: 7vw;
+    margin-top: 2vh;
+    border-radius: 60px;
+    padding-top: 3px ;
+    text-align: center;
+    height: 5vh;
+    color: #474747;
+}
+#card-image{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 20vw;
-
 }
 
 #card-image img{
     width: 18vw;
+}
+#card-text{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 20vw;
+    gap: 1vh;
 }
 
 #tenis-span{
     font-size: 10px;
     color: gray;
     font-weight: bold;
+    margin-top: 2vh;
 }
 
 #tenis-p {
     color: rgb(72, 71, 71);
     font-size: 16px;
     font-family: inter;
+    margin-bottom: 0;
 }
 #span-line{
     text-decoration: line-through;
