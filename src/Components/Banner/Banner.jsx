@@ -101,7 +101,6 @@ function Banner() {
           <button id="orange-button">Continuar</button>
         </div>
 
-
       </section>
 
     </>

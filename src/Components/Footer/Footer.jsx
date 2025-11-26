@@ -35,7 +35,7 @@ function Footer() {
                     </div>
                     <div id="footer-contact">  
                             <h3>Contato</h3>
-                            <p>Av. Santos Dumont, 1510-1 andar - Aldeota, Fortaleza - CE, 60150-161 (85)3051-3411 </p>
+                            <p>Av. Santos Dumont, 1510 - 1 andar - Aldeota, Fortaleza -CE, 60150-161 (85)3051-3411</p>
                     </div>
                 </div>
                 
