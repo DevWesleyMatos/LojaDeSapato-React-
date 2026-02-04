@@ -16,7 +16,7 @@ function ProductList() {
 
   return (
     <div className="product-page">
-      {/* Sidebar */}
+
       <aside className="sidebar">
         <h3>Filtrar por</h3>
 
@@ -36,7 +36,6 @@ function ProductList() {
         </div>
       </aside>
 
-      {/* Conteúdo principal */}
       <main className="content">
         <div className="content-header">
           <p>Resultados para "Tênis"</p>
