@@ -4,6 +4,7 @@ import Productspage from './Pages/Productspage';
 import ProductsDetailspage from './Pages/ProductDetailsPage';
 import CartPage from './Pages/CartPage';
 import CreateAccountPage from './Pages/CreateAccountPage';
+import Teste from './Pages/Teste';
 
 
 function App() {
@@ -11,11 +12,12 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Homepage/>} />
-          <Route path='/products' element={<Productspage/>} />
-          <Route path='/productsDetails' element={<ProductsDetailspage/>} />
+          <Route path='/' element={<Homepage />} />
+          <Route path='/products' element={<Productspage />} />
+          <Route path='/productsDetails' element={<ProductsDetailspage />} />
           <Route path='/cart' element={<CartPage />} />
-          <Route path='/createAccount' element={<CreateAccountPage/>} />
+          <Route path='/createAccount' element={<CreateAccountPage />} />
+          <Route path='/teste' element={<Teste />} />
         </Routes>
       </BrowserRouter>
     </>
