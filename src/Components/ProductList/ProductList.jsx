@@ -13,19 +13,7 @@ function ProductList() {
       .catch((err) => console.error("Erro ao buscar produtos:", err));
   }, []);
 
-  function handleOrderChange(e) {
-    setOrder(e.target.value);
 
-    let sorted = [...products];
-
-    if (e.target.value === "price-asc") {
-      sorted.sort((a, b) => a.discountedValue - b.discountedValue);
-    } else if (e.target.value === "price-desc") {
-      sorted.sort((a, b) => b.discountedValue - a.discountedValue);
-    }
-
-    setProducts(sorted);
-  }
 
   return (
     <div className="product-page">
