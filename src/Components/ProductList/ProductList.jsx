@@ -4,7 +4,6 @@ import "./ProductList.css";
 
 function ProductList() {
   const [products, setProducts] = useState([]);
-  const [order, setOrder] = useState("relevant");
 
   useEffect(() => {
     fetch("https://691e5f8abb52a1db22bdb573.mockapi.io/api/products") 
@@ -42,7 +41,7 @@ function ProductList() {
         <div className="content-header">
           <p>Resultados para "Tênis"</p>
 
-          <select onChange={handleOrderChange}>
+          <select >
             <option value="relevant">Ordenar por: mais relevantes</option>
             <option value="price-asc">Menor preço</option>
             <option value="price-desc">Maior preço</option>
