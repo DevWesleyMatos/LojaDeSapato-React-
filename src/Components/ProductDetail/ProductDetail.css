@@ -1,0 +1,24 @@
+*{
+    outline: red solid 1px;
+}
+#product-detail-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+#product-image{
+display: flex;
+flex-direction: column;
+}
+#product-image-primary img{
+    width: 400px;
+}
+#product-image-options{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+#product-image-options img{
+    width: 100px;
+}
