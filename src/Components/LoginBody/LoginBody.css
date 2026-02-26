@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  background: linear-gradient(135deg, #c7c9ff, #e6e7ff);
+}
+
+.login-card {
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 12px;
+  width: 380px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.login-card h1 {
+  margin: 0 0 8px 0;
+  font-size: 24px;
+}
+
+.subtitle {
+  font-size: 14px;
+  margin-bottom: 24px;
+  color: #555;
+}
+
+.subtitle a {
+  color: #7b2cbf;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  font-size: 13px;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.form-group input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  background: #f7f7f7;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #c0267a;
+  background: #fff;
+}
+
+.forgot {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.forgot a {
+  font-size: 13px;
+  color: #666;
+  text-decoration: none;
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #c0267a;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+
+.btn-primary:hover {
+  background: #a81f68;
+}
+
+.divider {
+  text-align: center;
+  font-size: 13px;
+  color: #777;
+  margin: 16px 0;
+}
+
+.social-login {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.btn-social {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  color: #fff;
+}
+
+.btn-social.google {
+  background: #db4437;
+}
+
+.btn-social.facebook {
+  background: #1877f2;
+}
+
+.login-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-image img {
+  max-width: 400px;
+  transform: rotate(-15deg);
+}
