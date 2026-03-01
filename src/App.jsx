@@ -4,7 +4,9 @@ import Productspage from './Pages/Productspage';
 import ProductsDetailspage from './Pages/ProductDetailsPage';
 import CartPage from './Pages/CartPage';
 import CreateAccountPage from './Pages/CreateAccountPage';
-import Teste from './Pages/ProductListPage';
+import ProductList from './Pages/ProductListPage';
+import Login from './Pages/Login'
+import MyInformationPages from './Pages/MyInformationPages';
 
 
 function App() {
@@ -17,7 +19,10 @@ function App() {
           <Route path='/productsDetails' element={<ProductsDetailspage />} />
           <Route path='/cart' element={<CartPage />} />
           <Route path='/createAccount' element={<CreateAccountPage />} />
-          <Route path='/teste' element={<Teste />} />
+          <Route path='/productList' element={<ProductList />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/myInformation' element={<MyInformationPages />} />
+
         </Routes>
       </BrowserRouter>
     </>

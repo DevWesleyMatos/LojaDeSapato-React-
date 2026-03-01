@@ -1,13 +1,11 @@
 import './Input.css'
 
-function Input(props) {
+function Input({ label, ...props }) {
   return (
-    <>
-        <div>
-            <label className="input-label" htmlFor="">{props.label}</label>
-            <input className='input-input' type={props.type}  placeholder={props.placeholder} />
-        </div>
-    </>
+    <div>
+      <label>{label}</label>
+      <input {...props} />
+    </div>
   )
 }
 
