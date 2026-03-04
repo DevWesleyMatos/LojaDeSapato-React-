@@ -1,8 +1,11 @@
 import { useState } from "react"
+import { useNavigate } from "react-router-dom"
 import Input from '../Input/Input'
 import './CreateAccountBody.css'
 
 function CreateAccountBody() {
+
+  const navigate = useNavigate()
 
   const [formData, setFormData] = useState({
     name: "",
@@ -41,42 +44,51 @@ function CreateAccountBody() {
         !formData.cpf
       ) {
         setLoading(false)
-        return setError("Preencha todos os campos obrigatórios")
+        return setError("Preencha os campos obrigatórios")
       }
 
-      const deliveryResponse = await fetch("http://localhost:3300/api/delivery-address", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-          address: formData.address,
-          neighborhood: formData.neighborhood,
-          city: formData.city,
-          zip_code: formData.zip_code,
-          state: formData.state
+      let deliveryId = null
+
+      const hasAddress =
+        formData.address &&
+        formData.neighborhood &&
+        formData.city &&
+        formData.zip_code &&
+        formData.state
+
+      if (hasAddress) {
+        const deliveryResponse = await fetch("http://localhost:3300/api/delivery-address", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            address: formData.address,
+            neighborhood: formData.neighborhood,
+            city: formData.city,
+            zip_code: formData.zip_code,
+            state: formData.state
+          })
         })
-      })
 
-      const deliveryData = await deliveryResponse.json()
+        const deliveryData = await deliveryResponse.json()
 
-      if (!deliveryResponse.ok) {
-        setLoading(false)
-        return setError("Erro ao criar endereço")
+        if (!deliveryResponse.ok) {
+          setLoading(false)
+          return setError("Erro ao criar endereço")
+        }
+
+        deliveryId = deliveryData.id
       }
 
       const userResponse = await fetch("http://localhost:3300/api/users", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           name: formData.name,
           mail: formData.mail,
           password: formData.password,
           cpf: formData.cpf,
           cellphone: formData.cellphone,
-          deliveryId: deliveryData.id
+          deliveryId: deliveryId
         })
       })
 
@@ -87,11 +99,9 @@ function CreateAccountBody() {
         return setError(userData.error || "Erro ao criar usuário")
       }
 
-      alert("Conta criada com sucesso!")
-      window.location.href = "/login"
+      navigate("/login")
 
     } catch (err) {
-      console.error(err)
       setError("Erro interno do servidor")
     } finally {
       setLoading(false)
@@ -135,7 +145,7 @@ function CreateAccountBody() {
           />
 
           <Input
-            label="Celular *"
+            label="Celular"
             type="text"
             placeholder="Insira seu celular"
             value={formData.cellphone}
@@ -149,15 +159,14 @@ function CreateAccountBody() {
             value={formData.password}
             onChange={(e) => handleChange("password", e.target.value)}
           />
-
         </div>
 
         <div id='create-account-body-delivery'>
-          <h4>Endereço</h4>
+          <h4>Endereço (Opcional)</h4>
           <hr />
 
           <Input
-            label="Endereço *"
+            label="Endereço"
             type="text"
             placeholder="Insira seu endereço"
             value={formData.address}
@@ -165,7 +174,7 @@ function CreateAccountBody() {
           />
 
           <Input
-            label="Bairro *"
+            label="Bairro"
             type="text"
             placeholder="Insira seu bairro"
             value={formData.neighborhood}
@@ -173,7 +182,7 @@ function CreateAccountBody() {
           />
 
           <Input
-            label="Cidade *"
+            label="Cidade"
             type="text"
             placeholder="Insira sua cidade"
             value={formData.city}
@@ -181,7 +190,7 @@ function CreateAccountBody() {
           />
 
           <Input
-            label="Estado *"
+            label="Estado"
             type="text"
             placeholder="Insira seu estado"
             value={formData.state}
@@ -189,19 +198,18 @@ function CreateAccountBody() {
           />
 
           <Input
-            label="CEP *"
+            label="CEP"
             type="text"
             placeholder="Insira seu CEP"
             value={formData.zip_code}
             onChange={(e) => handleChange("zip_code", e.target.value)}
           />
-
         </div>
 
-        {error && <p style={{ color: "red" }}>{error}</p>}
+        {error && <p className="create-account-error">{error}</p>}
 
         <div id='create-account-body-button-div'>
-          <button 
+          <button
             type="submit"
             className='create-account-body-button'
             disabled={loading}

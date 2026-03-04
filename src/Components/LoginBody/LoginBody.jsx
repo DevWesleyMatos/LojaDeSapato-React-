@@ -37,6 +37,7 @@ export default function LoginBody() {
       }
 
       localStorage.setItem("user", JSON.stringify(data));
+
       navigate("/myInformation");
 
     } catch (err) {
@@ -52,7 +53,7 @@ export default function LoginBody() {
         <h1>Acesse sua conta</h1>
 
         <p className="login-create-text">
-          Não tem uma conta?
+          Não tem uma conta?{" "}
           <span
             className="login-create-link"
             onClick={() => navigate("/createAccount")}
@@ -63,7 +64,7 @@ export default function LoginBody() {
 
         <form onSubmit={handleLogin}>
           <div className="form-group">
-            <label>Email *</label>
+            <label>Login *</label>
             <input
               type="text"
               value={mail}
@@ -78,6 +79,10 @@ export default function LoginBody() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
+          </div >
+
+          <div className="login-recovery">
+            <a href="">Esqueci minha senha</a>
           </div>
 
           {error && <p className="login-error">{error}</p>}
